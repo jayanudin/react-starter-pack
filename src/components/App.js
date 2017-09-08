@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src="/images/logo.svg" className="App-logo" alt="logo" />
-          <h2>Welcome Udin</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <nav>
+                <ul className="navigation">
+                    <li><Link to="/homepage">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                </ul>
+            </nav>
+        );
+    }
 }
 
 export default App;
