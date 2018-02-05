@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-class Homepage extends Component {
+
+class Pasien extends Component {
     render() {
         return (
-            <div className="homepage-content">
-                <h2>homepage</h2>
+            <div className="pasien-content">
+                <h2>pasien</h2>
             </div>
           
         );
     }
 }
 
-export default Homepage;
+export default Pasien;
